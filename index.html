@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="utility-col container">
+        <div class="utility-row color">
+            <p>Dark mode: </p>
+            <!-- <ion-icon id="off" name="contrast-outline"></ion-icon>
+            <ion-icon id="on" name="contrast"></ion-icon> -->
+            <div class="on-off">
+                <p id="on_off">OFF</p>
+            </div>
+        </div>
+        <div class="header">
+            <div class="utility-row search-items">
+                <input id="id-input-box" type="text" class="utility-col input-box" placeholder="Enter city name .. ">
+                <button id="id-search-button" class="utility-col search"><ion-icon name="search"></ion-icon></button>
+            </div>
+        </div>
+
+        <div class="utility-col location-not-found">
+            <h1>Sorry, Location not found..!!!</h1>
+            <img src="assets/404.png" alt="404 Error">
+        </div>
+
+        <div class="utility-col content">
+            <img id="id-weather-image" class="weather-image" src="assets/clear.png" alt="">
+            <div class="utility-col matter">
+                <span id="id-temperature" class="temp">0</span>       <!-- <span class="span1"><sup>°C</sup></span> -->
+                <p id="id-description" class="description">Sunny</p>
+            </div>
+        </div>
+
+        <div class="utility-row bottom">
+            <div class="utility-row humidity">
+                <ion-icon name="water"></ion-icon>
+                <div class="utility-col humidity-content">
+                    <span id="humidity-value">45%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="utility-row wind-speed">
+                <ion-icon name="cloud-circle-outline"></ion-icon>
+                <div class="utility-col wind-content">
+                    <span id="wind-speed-value">45Km/H</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- water icon -->
+<!-- <ion-icon name="water"></ion-icon>  -->
+
+<!-- humidity -->
+<!-- <ion-icon name="cloud-circle-outline"></ion-icon> -->
+
+<!-- °C -->
